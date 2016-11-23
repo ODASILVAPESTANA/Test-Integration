@@ -1,0 +1,26 @@
+{
+  "name": "admision",
+  "version": "1.0.0",
+  "description": "Test para Integracion",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",
+    "method-override": "^2.1.2",
+    "mysql": "^2.12.0",
+    "properties-reader": "^0.0.14",
+    "winston": "^2.3.0"
+   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SYNERGY-GB/Test-Integration.git"
+  },
+  "author": "Nelo R. Tovar",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/Test-Integration/issues"
+  }
+}
