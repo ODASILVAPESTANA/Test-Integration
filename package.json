@@ -1,0 +1,24 @@
+{
+  "name": "test-integration",
+  "version": "1.0.0",
+  "description": "Esta prueba está diseñada para medir tus destrezas en el área de integración. Para resolver esta prueba debes tener en cuenta que debes usar las siguientes tecnologías:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SYNERGY-GB/Test-Integration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/Test-Integration#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-sha1": "^1.0.1"
+  }
+}
