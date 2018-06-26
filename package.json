@@ -1,0 +1,32 @@
+{
+  "name": "test-integration",
+  "version": "1.0.0",
+  "description": "Test de prueba de integración para SYNERGY-GB ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SYNERGY-GB/Test-Integration.git"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Edwar Anthwam Susarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/Test-Integration#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "properties-reader": "0.0.16",
+    "request": "^2.87.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {}
+}
