@@ -50,14 +50,14 @@ app.post('/admision', function (req, res) {
 
 // Conexión a  un puerto sencillo '8010'
 app.listen(8010, function () {
-  console.log('Escuchando por el puerto 8010');
+  console.log('Escuchandote por el puerto 8010');
 });
 
 // Función getAdmisionData declarada en el Metodo GET
 function getAdmisionData(response) {
   var url = 'http://jsonplaceholder.typicode.com/albums';
   var albums = '';
-  get(url, function(result, res){
+  http.get(url, function(result, res){
       var body = '';
           // Resultado simple del JSON
       result.on('data', function(chunk){
