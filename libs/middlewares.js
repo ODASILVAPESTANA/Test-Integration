@@ -7,17 +7,15 @@ var sha1 = require('sha1');
 
 module.exports = app => {
 
-	// Para dar un formato mas limpio al JSON
+	// Para dar un formato mas limpio al JSON  |PARA QUE SE VEA BIEN|
 	app.set('json spaces', 4);
 	// Config del puerto
 	app.set('port', process.env.PORT || 8010);
 
 
-	// Para que mi API entienda que recibira JSON'S
+	// Para que la API entienda que recibira JSON'S
 	app.use(bodyParser.json()); 
 	app.use(bodyParser.urlencoded({ extended: true }));
-	//JSON formateado "Para que se vea bonito el JSON"
-	
 
 	// Metodo GET
 	app.get('/admision', function (req, res) {

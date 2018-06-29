@@ -6,7 +6,7 @@ var app = express();
 
 //Estructuración de la API de una manera sencilla de leer
 //include ... las configuraciones de la app
-//luego que incluya las rutas
+//luego incluira las rutas
 //por ultimo que ejecute el archivo encargado de arrancar la app
 consign()
     .include('libs/middlewares.js')

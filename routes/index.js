@@ -1,4 +1,4 @@
-// Para que mi API entienda que recibira JSON'S
+//LLamado de las Dependencias
 var http = require("http");
 var mysql = require('mysql');
 
