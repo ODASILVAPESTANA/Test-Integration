@@ -1,0 +1,31 @@
+{
+  "name": "test-integration",
+  "version": "1.0.0",
+  "description": "servicio web rest con express.js",
+  "main": "admision.js",
+  "scripts": {
+    "start": "nodemon admision.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SYNERGY-GB/Test-Integration.git"
+  },
+  "author": "leonela lanz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/Test-Integration#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "properties-reader": "0.0.16",
+    "request": "^2.88.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
