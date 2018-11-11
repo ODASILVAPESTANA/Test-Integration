@@ -6,7 +6,7 @@ app.use(express.json());
 
 /**
  * Get a list of albums with the followinf information:
- * userId, id, tittle.
+ * userId, id, title, title hash.
  * @returns {json} list of albums
  */
 app.get('/admision', (req, res) => {
@@ -16,6 +16,10 @@ app.get('/admision', (req, res) => {
     })    
 })
 
+/**
+ * Regist a new user
+ * @returns {json} rows affected and info
+ */
 app.post('/admision', (req, res) => {
     const user = {
         name: req.body.name, 

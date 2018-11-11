@@ -15,13 +15,18 @@ connection.connect(function(error){
         console.log('Connection error' + error.message + 
         ' host ' + connection.config.host +
         ' user ' + connection.config.user +
-        ' password ' + connection.config.password +
         ' database ' + connection.config.database +
         ' port ' + connection.config.port);
     else
         console.log('Connection stablished');
 })
 
+/**
+ * Regist new user in database
+ * @param {Function} callback 
+ * @param {user object} user
+ * @returns {json} rows affected and info
+ */
 const CreateNewUser = (callback, user) => {
     connection.query(
         `insert into persona values ('${user.name}', '${user.lastname}', '${user.email}')`,
