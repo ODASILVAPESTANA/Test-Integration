@@ -18,6 +18,8 @@
   "homepage": "https://github.com/SYNERGY-GB/Test-Integration#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "properties-reader": "0.0.16",
     "request": "^2.88.0",
     "sha1": "^1.1.1"
   }
