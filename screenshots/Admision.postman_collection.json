@@ -1,0 +1,108 @@
+{
+	"id": "1583e841-d75f-7cb4-85cb-95570126a923",
+	"name": "Admision",
+	"description": "",
+	"order": [
+		"6ba48dc9-98f2-9fe7-5b41-be4e608da8f4",
+		"20e1ec2e-822e-74f0-fbd1-7e63fce9a5db",
+		"44f643b0-2d0e-09c5-dcc6-419c0e44f13e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1542243849549,
+	"owner": "2986849",
+	"public": false,
+	"requests": [
+		{
+			"id": "20e1ec2e-822e-74f0-fbd1-7e63fce9a5db",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1542254325337,
+			"name": "Get Admision",
+			"description": "",
+			"collectionId": "1583e841-d75f-7cb4-85cb-95570126a923",
+			"responses": [],
+			"rawModeData": "{\n    \"nombre\": \"Jose\",\n    \"apellido\": \"Palacios\",\n    \"correo\": \"cervecera.artesanal@gmail.com\"\n}"
+		},
+		{
+			"id": "44f643b0-2d0e-09c5-dcc6-419c0e44f13e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1583e841-d75f-7cb4-85cb-95570126a923",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Data Service",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542254304679,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"nombre\": \"Jose\",\n    \"apellido\": \"Palacios\",\n    \"correo\": \"cervecera.artesanal@gmail.com\"\n}"
+		},
+		{
+			"id": "6ba48dc9-98f2-9fe7-5b41-be4e608da8f4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/add",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1542248981714,
+			"name": "Post Admision",
+			"description": "",
+			"collectionId": "1583e841-d75f-7cb4-85cb-95570126a923",
+			"responses": [],
+			"rawModeData": "{\n    \"nombre\": \"Jose\",\n    \"apellido\": \"Palacios\",\n    \"correo\": \"cervecera.artesanal@gmail.com\"\n}"
+		}
+	]
+}
