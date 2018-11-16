@@ -1,21 +1,15 @@
 var express = require('express')
-var http = require('http')
-var Request = require("request");
 var app = express()
+var http = require('http')
 var getJSON = require('get-json')
 
 
-app.get('/admision', (req, res) => {  
-  	/*Request.get("http://jsonplaceholder.typicode.com/albums", (error, response, body) => {
-    	if(error) {
-        	return console.dir(error);
-    	}
-    	//console.dir(JSON.parse(body));
-    	resultado=JSON.stringify(body);
-    	//res.send(JSON.parse(body));
-    	var getJSON = require('get-json')
+const PropertiesReader = require('properties-reader');
+const prop = PropertiesReader('database.properties');
 
-	});*/
+
+
+app.get('/admision', (req, res) => {    	
 	getJSON('http://jsonplaceholder.typicode.com/albums')
 		    .then(function(response) {
 		      //console.log(response);		      
@@ -32,12 +26,35 @@ app.get('/admision', (req, res) => {
 
 })
 
-app.post('/admision', (req, res) => {
-  	var username = req.query.username
-  	var lastname = req.query.lastname
-  	var email =req.query.email
-  	res.send("Hola: " + username + " " + lastname+", tu correo:"+email)
+app.post('/admision', (req,  res, next) => {
+	  	var username = req.query.username
+	  	var lastname = req.query.lastname
+	  	var email =req.query.email
+
+		var mysql      = require('mysql');
+		
+		var connection = mysql.createConnection({
+		  host     : prop.get('database.host'),
+		  port     : prop.get('database.port'),
+		  user     : prop.get('database.user'),
+		  password : Buffer.from(prop.get('database.password').toString()),
+		  database:  prop.get('database.database')
+		});
+
+		connection.connect();			 
+		connection.query('INSERT INTO persona (username, lastname, email) VALUES (?, ?, ?) ', [username, lastname, email], function(err, result) {
+	                //if(err) throw err
+	                if (err) {
+	                    console.log('error', err)                    
+	                } else {                
+	                    console.log('success', 'Data added successfully!')  
+	                    res.send("Data added successfully!<br>Hello: " + username + " " + lastname+", tu correo:"+email)                  
+	                }
+	            })
+		connection.end();
 })
+
+
 
 
 http.createServer(app).listen(3000, () => {
