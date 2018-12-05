@@ -1,0 +1,35 @@
+{
+  "name": "admision",
+  "version": "1.0.0",
+  "description": "Esta aplicación contiene el test de admisión de Gersón Vizquel para la empresa SYNERGY-GB",
+  "main": "admision.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ODASILVAPESTANA/Test-Integration.git"
+  },
+  "keywords": [
+    "test",
+    "SYNERGY-GB/Test-Integration",
+    "Gersón",
+    "Vizquel"
+  ],
+  "author": "Gersón Vizquel",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ODASILVAPESTANA/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/ODASILVAPESTANA/Test-Integration#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
