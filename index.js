@@ -47,3 +47,23 @@ app.post('/send',function(req,res){
     });
 });
 
+// Petición GET
+app.get('/get',function(req,res){
+    console.log('Peticion GET recibida. Procesando...'); 
+    var sha1 = require('sha1');
+    request.get('http://jsonplaceholder.typicode.com/albums', function (error, response, body) {
+          if (error){
+              var error = 'Ocurrio un error durante la petición. Intente nuevamente.';
+              console.log(error);
+              res.send(error);
+          }else{
+            var registros = JSON.parse(body);
+            var encriptar;
+            for (encriptar in registros){
+                registros[encriptar].hash = sha1(registros[encriptar].title);
+            }
+            res.send(JSON.stringify(registros));
+            console.log('Petición GET procesada exitosamente');
+        }
+    });
+});
