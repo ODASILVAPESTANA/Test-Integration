@@ -1,0 +1,28 @@
+{
+  "name": "Test-Integration",
+  "version": "1.0.0",
+  "description": "Esta prueba está diseñada para medir tus destrezas en el área de integración. Para resolver esta prueba debes tener en cuenta que debes usar las siguientes tecnologías:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ODASILVAPESTANA/Test-Integration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ODASILVAPESTANA/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/ODASILVAPESTANA/Test-Integration#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "node-fetch": "^2.3.0"
+  }
+}
