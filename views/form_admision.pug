@@ -1,0 +1,46 @@
+doctype html
+html
+  head 
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    div
+      table
+        thead
+          tr 
+            th nombre
+            th apellido
+            th correo
+            th
+        tbody
+          tr
+          td Alexis
+          td canchica
+          td alenux1@gmail.com
+          td <button type="button" id="send"> Registar</button>
+    script.
+      $(document).ready(function(){
+              $('#send').click(function(){
+                //$.post("http://localhost:3000/admision/", { "nombre": "Alexis", "apellido": "canchica", "correo":"alenux1@gmail.com" } );
+                      $.ajax({
+                         type:"POST",
+                         dataType:"json",
+                         contentType: "application/json",
+                         data:JSON.stringify({nombre:"alexis",apellido:"Canchica",correo:"alenux1@gmail.com"}),
+                         //data:JSON.stringify(),
+                         url:"http://localhost:3000/admision",
+                                          
+                      })
+                      .done(function(response){
+                            //console.log("Response of update: ",response)
+                            alert(response.response);
+                            
+                              })
+                      .fail(function(xhr, textStatus, errorThrown){
+                            console.log("ERROR: ",xhr.responseText)
+                                  return xhr.responseText;
+                                  
+                              });
+              });
+      });
+
+
+
