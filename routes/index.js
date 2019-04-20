@@ -25,7 +25,8 @@ router.get('/admision', function(req, res, next) {
             if (err){
              return next(err);
             }else
-              res.status(200).send( JSON.stringify(data, null, 4));
+              res.send(JSON.stringify(data,null,4));
+              // res.status(200).send( JSON.stringify(data, null, 4));
     });
    }catch (error){
       console.log(error);
