@@ -1,0 +1,24 @@
+{
+  "name": "test-integration",
+  "version": "1.0.0",
+  "description": "Coding test using Express.js for a job position on SYNERGY",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ODASILVAPESTANA/Test-Integration.git"
+  },
+  "author": "Alejandro Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ODASILVAPESTANA/Test-Integration/issues"
+  },
+  "homepage": "https://github.com/ODASILVAPESTANA/Test-Integration#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "sha1": "^1.1.1"
+  }
+}
