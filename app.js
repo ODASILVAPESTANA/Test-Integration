@@ -55,7 +55,7 @@ connection.connect(function(err) {
     console.log("Connected!");
 });
 
-// Crear la base de datos sino existe
+// Crear la base de datos si no existe
 connection.query("CREATE DATABASE IF NOT EXISTS " + properties.get('DATABASE'), function (err, result) {
     if (err) throw err;
     console.log(result);
@@ -85,12 +85,14 @@ function addPerson(request, response){
 
     //Insertar los datos
     connection.query('INSERT INTO ' + properties.get('DATABASE') +'.persona SET ?', person, function(err, result) {
-      if (err) throw err;    
+      if (err) throw err;
+      console.log(result);
     });
 
     //Mostrar los datos para verificar la ejecución
-    connection.query('SELECT * FROM ' + properties.get('DATABASE') +'.persona', function (error, results, fields) {
-      response.send(results);
+    connection.query('SELECT * FROM ' + properties.get('DATABASE') +'.persona', function (err, result) {
+        if (err) throw err;
+        response.send(result);
     });
 };
 
