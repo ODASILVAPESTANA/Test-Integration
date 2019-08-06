@@ -1,1 +1,2 @@
-/node_modules
+# Ignorar el contenido de las carpetas node_modules
+node_modules/*

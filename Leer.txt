@@ -1,0 +1,19 @@
+Hola buenas noches cree tres rutas para la prueba:
+
+### GET `admision`
+ruta: 
+Admision.js 
+En el cual muestra los datos obtenidos del album mas el "hash"
+
+###POST `admision`
+
+rutas: 
+getAdmision.js 
+En el cual consulta la bd
+
+postAdmision.js
+En el cual inserta una persona nueva en la bd
+
+Todo esto probado desde postman anexo fotos  
+
+
