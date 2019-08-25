@@ -1,4 +1,5 @@
 const express = require('express');
+const request = require('request');
 const app = express();
 
 app.listen(3000, () => {
@@ -6,5 +7,5 @@ app.listen(3000, () => {
 });
 
 app.get('/admision', (req, res) => {
-	res.send('Prueba Express');
+	request('http://jsonplaceholder.typicode.com/albums', (error, response, body) => res.send(body));
 });
