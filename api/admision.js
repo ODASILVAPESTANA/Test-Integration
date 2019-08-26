@@ -16,7 +16,7 @@ admision = (app, connection) => {
 			(error, response, body) => {
 				if (response.statusCode == 200 && !error) {
 					body.forEach((album) => {
-						album.hash = sha1(album.title);
+						album.hash = sha1(album.title); //CREATED HASH KEY AND ADDED TO JSON FILE
 					});
 					res.send(body);
 				} else {
